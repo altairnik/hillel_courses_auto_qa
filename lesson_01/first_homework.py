@@ -78,5 +78,5 @@ first_book = 8
 second_book = first_book + 2
 third_book = (first_book + second_book) / 2
 total_cost = first_book + second_book + third_book
-print('All books cost', int(total_cost))
+print('All books cost', total_cost)
 # or print('All books cost', first_book + second_book + int(third_book))
