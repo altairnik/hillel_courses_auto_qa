@@ -53,9 +53,11 @@ second_index = adwentures_of_tom_sawer.find('Tom', first_index + len('Tom'), len
 # task 07
 # adwentures_of_tom_sawer_sentences = None
 adwentures_of_tom_sawer = adwentures_of_tom_sawer. replace('. ', '.')
-print(adwentures_of_tom_sawer)
+# print(adwentures_of_tom_sawer)
 adwentures_of_tom_sawer_sentences = adwentures_of_tom_sawer.split('.')
-print(adwentures_of_tom_sawer_sentences)
+# тут у меня почету то в конце списка появилось пустое значение ¯\_(ツ)_/¯
+# поетому я не нашел ничего лучшего, чем немножко нагомнокодить в 10 задании :-|
+# print(adwentures_of_tom_sawer_sentences)
 
 # task 08
 # print(adwentures_of_tom_sawer_sentences[3].lower())
@@ -63,7 +65,6 @@ print(adwentures_of_tom_sawer_sentences)
 # task 09
 for elements in adwentures_of_tom_sawer_sentences:
     print(elements)
-print(adwentures_of_tom_sawer_sentences[4])
 for index in adwentures_of_tom_sawer_sentences:
     if index.startswith('By the time'):
         print('Yes')
@@ -71,8 +72,11 @@ for index in adwentures_of_tom_sawer_sentences:
         print('No')
 
 # # task 10
+# Окуратно, тут код не приятно пахнет L:)
+# если бы в 7 таске все было нормально то можно было сделать немного красивше)
+# str = str(adwentures_of_tom_sawer_sentences[len(adwentures_of_tom_sawer_sentences) -1])
 str = str(adwentures_of_tom_sawer_sentences[4])
-str_1 = str.split()
-print(len(str_1) - 1)
+str_to_words = str.split()
+# print(len(str_to_words) - 1)
 # print(adwentures_of_tom_sawer_sentences[4])
 
