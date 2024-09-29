@@ -38,12 +38,12 @@ for symbol in adwentures_of_tom_sawer:
 
 # task 05
 Upper_words = adwentures_of_tom_sawer.split()
-words = 0
+word = 0
 # test = ['Wer', 'wer', 'n', '.', 'Rt']
 for elem in Upper_words:
     if elem.istitle():
-        words += 1
-# print(f'Number of words with capital letter - {words}')
+        word += 1
+# print(f'Number of words with capital letter - {word}')
 
 # task 06
 first_index = adwentures_of_tom_sawer.find('Tom')
@@ -52,31 +52,32 @@ second_index = adwentures_of_tom_sawer.find('Tom', first_index + len('Tom'), len
 
 # task 07
 # adwentures_of_tom_sawer_sentences = None
-adwentures_of_tom_sawer = adwentures_of_tom_sawer. replace('. ', '.')
+# adwentures_of_tom_sawer = adwentures_of_tom_sawer. replace('. ', '.')
 # print(adwentures_of_tom_sawer)
-adwentures_of_tom_sawer_sentences = adwentures_of_tom_sawer.split('.')
+adwentures_of_tom_sawer_sentences = adwentures_of_tom_sawer.split('. ')
+# adwentures_of_tom_sawer_sentences = adwentures_of_tom_sawer.split()
+print(adwentures_of_tom_sawer_sentences)
 # тут у меня почету то в конце списка появилось пустое значение ¯\_(ツ)_/¯
 # поетому я не нашел ничего лучшего, чем немножко нагомнокодить в 10 задании :-|
 # print(adwentures_of_tom_sawer_sentences)
 
 # task 08
-# print(adwentures_of_tom_sawer_sentences[3].lower())
+print(adwentures_of_tom_sawer_sentences[3].lower())
 
 # task 09
-for elements in adwentures_of_tom_sawer_sentences:
-    print(elements)
-for index in adwentures_of_tom_sawer_sentences:
-    if index.startswith('By the time'):
-        print('Yes')
-    else:
-        print('No')
+# for elements in adwentures_of_tom_sawer_sentences:
+#     print(elements)
+# for index in adwentures_of_tom_sawer_sentences:
+#     if index.startswith('By the time'):
+#         print('Yes')
+#     else:
+#         print('No')
 
 # # task 10
 # Окуратно, тут код не приятно пахнет L:)
 # если бы в 7 таске все было нормально то можно было сделать немного красивше)
 # str = str(adwentures_of_tom_sawer_sentences[len(adwentures_of_tom_sawer_sentences) -1])
-str = str(adwentures_of_tom_sawer_sentences[4])
-str_to_words = str.split()
-# print(len(str_to_words) - 1)
-# print(adwentures_of_tom_sawer_sentences[4])
+words = adwentures_of_tom_sawer_sentences[-2]
+print(len(words))
+
 
