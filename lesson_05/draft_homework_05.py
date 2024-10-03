@@ -48,13 +48,12 @@ car_data = {
 # search_criteria = (2017, 1.6, 36000)
 year = 2017
 engine_volume = 1.6
-price = 3600
+price = 36000
 list_car_data = []
 for key, value in car_data.items():
-  if value[1] >= year and value[2] >= engine_volume and value[4] >= price:
+  if value[1] >= year and value[2] >= engine_volume and value[4] <= price:
     list_car_data = list(car_data.items())
 sorted_car_data = sorted(list_car_data, key=lambda car: car[1][4])
-# print(list_car_data[0])
 print(list_car_data[0:5:])
 
 #task 5.2
@@ -83,22 +82,11 @@ people_records = [
 ]
 # 1
 people_records.insert(0, ('Max', 'Smit', 33, 'Engineer', 'Dely'))
-# print(people_records)
 
 # 2
 people_records[1], people_records[5] = people_records[5], people_records[1]
-# print(people_records)
-# print(people_records[1])
-# print(people_records[5])
 
 # 3
-# elem_6 = list(people_records[6])
-# elem_10 = list(people_records[10])
-# elem_13 = list(people_records[13])
-# print(elem_6[2])
-# print(elem_10[2])
-# print(elem_13[2])
-# if elem_6[2] and elem_10[2] and elem_13[2] >= 30:
 if people_records[6][2] and people_records[10][2] and people_records[13][2] >= 30:
   print('Yes')
   print(people_records[6], people_records[10], people_records[13], sep='\n')
