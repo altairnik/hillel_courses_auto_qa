@@ -52,7 +52,7 @@ list_car_data = []
 for key, value in car_data.items():
   if value[1] >= year and value[2] >= engine_volume and value[4] >= price:
     list_car_data = list(car_data.items())
-
+sorted_car_data = sorted(list_car_data, key=lambda car: car[1][4])
 # print(list_car_data[0])
 print(list_car_data[0:5:])
 # Given list of tuples (name, surname, age, profession, City location)
