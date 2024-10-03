@@ -1,3 +1,4 @@
+# task 5.1
 # Exists some car data with color, year, engine_volume, car type , price
 # We have search_criteria as tuple of ( year>= , engine_volume >= , price<=)
 # write code that will help us to get cars that satisfy search_criteria.
@@ -55,6 +56,8 @@ for key, value in car_data.items():
 sorted_car_data = sorted(list_car_data, key=lambda car: car[1][4])
 # print(list_car_data[0])
 print(list_car_data[0:5:])
+
+#task 5.2
 # Given list of tuples (name, surname, age, profession, City location)
 # 1 - Add your new record o the beginning of the given list
 # 2 - In modified list swap elements with indexes 1 and 5 (1<->5). Print result
@@ -89,15 +92,15 @@ people_records[1], people_records[5] = people_records[5], people_records[1]
 # print(people_records[5])
 
 # 3
-elem_6 = list(people_records[6])
-elem_10 = list(people_records[10])
-elem_13 = list(people_records[13])
+# elem_6 = list(people_records[6])
+# elem_10 = list(people_records[10])
+# elem_13 = list(people_records[13])
 # print(elem_6[2])
 # print(elem_10[2])
 # print(elem_13[2])
-if elem_6[2] and elem_10[2] and elem_13[2] >= 30:
+# if elem_6[2] and elem_10[2] and elem_13[2] >= 30:
+if people_records[6][2] and people_records[10][2] and people_records[13][2] >= 30:
   print('Yes')
+  print(people_records[6], people_records[10], people_records[13], sep='\n')
 else:
   print('No')
-
-# print(list(people_records[1]))
