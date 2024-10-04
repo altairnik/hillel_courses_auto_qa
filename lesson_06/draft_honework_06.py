@@ -1,14 +1,15 @@
 # task 6.1
 unic_symbol = input('Enter some text\n')
 for _ in unic_symbol:
-    if len(unic_symbol) < 10:
+    if len(unic_symbol) <= 9:
         print('False')
         break
-    elif len(unic_symbol) - len(set(unic_symbol)) >= 9:
+    elif len(unic_symbol) - len(set(unic_symbol)) <= 10:
         print('True')
         break
 
 # task 6.2
+# тут если в инпуте будет "H" и "h" то постоянно будет выводится первый принт так как первая поверка идет на "h"
 while True:
     checked_text = input('Enter some text\n')
     if checked_text.find('h') != -1:
