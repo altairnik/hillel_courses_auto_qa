@@ -52,12 +52,12 @@ car_data = {
 # for key, value in car_data.items():
 #   if value[1] >= year and value[2] >= engine_volume and value[4] <= price:
 search_criteria = (2017, 1.6, 36000)
-list_car_data = []
+sorted_car_data = []
 for key, value in car_data.items():
   if value[1] >= search_criteria[0] and value[2] >= search_criteria[1] and value[4] <= search_criteria[2]:
-    list_car_data = list(car_data.items())
-sorted_car_data = sorted(list_car_data, key=lambda car: car[1][4])
-print(list_car_data[0:5:])
+    sorted_car_data = list(car_data.items())
+sorted_car_data = sorted(sorted_car_data, key=lambda car: car[1][4])
+print(sorted_car_data[0:5:])
 
 #task 5.2
 # Given list of tuples (name, surname, age, profession, City location)
