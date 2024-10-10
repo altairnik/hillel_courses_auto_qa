@@ -7,18 +7,18 @@ def multiplication_table(number):
     # Complete the while loop condition.
     while multiplier <= number:
         result = number * multiplier
-        if result > 25:
+        if result > 25 or number == 1:
             break
         print(str(number) + "x" + str(multiplier) + "=" + str(result))
         multiplier += 1
-multiplication_table(5)
+multiplication_table(1)
 print('-' * 26)
 
 # task 2
 print('task 2' + '-' * 20)
-def duble_sum(first, second):
+def sum_of_2(first, second):
     print(first + second)
-duble_sum(4, 10)
+sum_of_2(4, 10)
 print('-' * 26)
 
 # task 3
